@@ -1,3 +1,6 @@
+Proyecto para equipo de e-Sport, en este caso está Tigris a modo ejemplo
+
+
 # EsportTeam
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.0.
