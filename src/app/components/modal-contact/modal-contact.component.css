@@ -1,0 +1,11 @@
+.modal-custom{
+    position: fixed;
+    top:10%;
+    right: 1%;
+    background-color: aliceblue;
+    border-color: lightgray;
+}
+
+.radio-custom{
+    border-radius: inherit;
+}

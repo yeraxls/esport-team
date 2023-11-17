@@ -1,0 +1,7 @@
+<section>
+    @for (player of teamlol; track player.id) {
+    <img [src]="createUrl(player)" alt="Top laner" (click)="playerDetail(player)">
+    } @empty {
+    No hay jugadores de momento
+    }
+</section>

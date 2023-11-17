@@ -1,0 +1,22 @@
+<div class="col-8 back-form">
+    <form>
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Correo electrónico</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Asunto</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlTextarea1">Mensaje</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+    </form>
+    <div class="d-flex justify-content-end mt-4">
+        <button type="button" class="btn btn-primary btn-lg btn-block w-100" (click)="enviarCorreo()">Enviar</button>
+    </div>
+</div>
+@if(mostrarModal){
+    <app-modal-contact (closeModal)="closeModal($event)" />
+}
