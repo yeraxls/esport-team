@@ -1,4 +1,4 @@
-import { Component, Output, EventEmitter } from '@angular/core';
+import { Component, Output, EventEmitter, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -8,9 +8,11 @@ import { CommonModule } from '@angular/common';
   templateUrl: './modal-contact.component.html',
   styleUrl: './modal-contact.component.css'
 })
-export class ModalContactComponent {
+export class ModalContactComponent implements OnInit {
   @Output() closeModal : EventEmitter<boolean> = new EventEmitter()
-
+  ngOnInit(): void {
+    setTimeout(() => this.emitModal(), 5000);
+  }
   emitModal(){
     this.closeModal.emit(false)
   }
